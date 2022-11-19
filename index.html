@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <script src="https://kit.fontawesome.com/3b6db8cd70.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1 class="title">Weather App</h1>
+
+        <div class="search">
+            <div class="search__bar">
+                <input type="text" class="search__input" placeholder="Enter city name">
+                <button class="search__btn">Search</button>
+            </div>
+
+            <p class="search__err"></p>
+        </div>
+
+        <div class="weather">
+            <div class="weather__header">
+                <p class="weather__city"></p>
+
+                <p class="weather__date"></p>
+            </div>
+
+            <div class="weather__info">
+                <div class="weather__status">
+                    <img src="" alt="Clouds" class="weather__icon">
+                    <p class="weather__text"></p>
+                </div>
+
+                <div class="weather__temp">
+                    <p class="weather__title">Temperature</p>
+                    <p class="weather__temp-number"><span class="weather__temp-number--number"></span>°<span class="weather__temp-number--celcius">C</span></p>
+                </div>
+
+                <div class="weather__humidity">
+                    <p class="weather__title">Humidity</p>
+                    <p class="weather__humidity-number"><span class="weather__humidity-number--number"></span>%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
